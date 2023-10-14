@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/64085cd283.js" crossorigin="anonymous"></script>    
+    <title>LearnonTube</title>
+</head>
+<style>
+    .nav-item{
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+    }
+    
+    .kml {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .nav-link:hover {
+        background-color: rgb(28, 220, 28);
+        border-radius: 15px;
+        font-weight: bold;
+    }
+    .mm {
+        border: 2px solid yellow;
+    }
+    .ll {
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .ko {
+        width: 385px;
+        
+        height: 375px;
+    }
+    .ko:hover{
+        opacity: 0.5;
+        transition: 1s;
+    }
+    .kj{
+        mix-blend-mode: multiply;
+    }
+    .aboutl{
+        border: 1px solid yellow;
+    }
+</style>
+<body>
+    
+<nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+    <a class="navbar-brand" href="#"><img src="{% static 'logo.png' %}" width="85px" class="kj" alt="" srcset=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link ml-2" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ml-2" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ml-2" href="#">Donate Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ml-2" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ml-2 mr-3 " href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid mm">
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="display-3 p-5 mt-4  kml text-warning">Learn Without Limits</h1>
+            <h4 class="display-6 text-dark p-0 ml-4"> Learn with a Clear Roadmap No-more Paid Courses Just Enroll And Learn With Best Roadmaps where we provide proper guidance and projects with Video tutorials and cheatsheet </h4>
+            <a href="#" class="btn btn-warning ml-4 mt-3 text-light"  >Learn More</a>
+        </div>
+        <div class="col-md-6">
+            <img src="{% static '6349007.jpg' %}" class="img-fluid" alt="" srcset="">
+        </div>
+    </div>
+</div>
+   
+<div class="container-fluid h-50 bg-warning d-flex align-items-center justify-content-center kkk">
+    <h3 class="display-5 p-2 text-light mt-1"> Search Here to Learn</h3><br>
+    <form action="" class="form-inline">
+        <input type="text" class="form-control   mr-2" name="" id="" placeholder="Search...">
+        <button type="submit" class="btn btn-warning">
+            <i class="fas fa-search"></i> Search
+        </button>
+    </form>
+</div>
+
+<div class="container mt-4">
+    <h3 class="display-4 text-center">Popular<span class=" text bg-warning text-light ll">Courses </span></h3>
+</div>
+
+<div class="container-fluid mt-5">
+  <div class="row">
+      <div class="col-md-3 mb-4">
+          <div class="card" style="width: 100%;">
+              <img class="card-img-top" src="{% static 'fr.jpg' %}" alt="Frontend Development">
+              <div class="card-body">
+                  <h5 class="card-title">Frontend Development</h5>
+                  <p class="card-text">Learn the Fastest way of Developing Frontend with Projects sections.</p>
+                  <a href="frontend" class="btn btn-warning text-light">Start Learning</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 mb-4">
+          <div class="card" style="width: 100%;">
+              <img class="card-img-top ko" src="{% static 'back.jpg' %}" alt="Backend Development">
+              <div class="card-body">
+                  <h5 class="card-title">Backend Development</h5>
+                  <p class="card-text">Learn the Backend development with <b>Mern</b> in a professional course</p>
+                  <a href="backend" class="btn btn-warning text-light">Start Learning</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 mb-4">
+          <div class="card" style="width: 100%;">
+              <img class="card-img-top ko" src="{% static 'pp.jpg' %}" alt="Premiere Pro Advance">
+              <div class="card-body">
+                  <h5 class="card-title">Premiere Pro Advance</h5>
+                  <p class="card-text">Learn the Secrets of professional Video editors How they Engage Minds.</p>
+                  <a href="video" class="btn btn-warning text-light">Start Learning</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 mb-4">
+          <div class="card" style="width: 100%;">
+              <img class="card-img-top" src="{% static 'bl1.png' %}" alt="Frontend Development">
+              <div class="card-body">
+                  <h5 class="card-title">Blockchain devlopment</h5>
+                  <p class="card-text">Learn the Fastest way of Developing Frontend with Projects sections.</p>
+                  <a href="blockchain" class="btn btn-warning text-light">Start Learning</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="container-fluid "> 
+<h3 class="display-4 text-dark text-center mt-5"> <span class="bg-warning ll text-light"> About </span>  Us </h3>
+
+    <div class="row">
+    <div class="col-md-6 p-2 mt-4">
+        <p class="text-justify">
+            At LearnOnTube, we believe that learning is a lifelong journey, and we're here to make that journey both engaging and accessible. Our platform is a unique blend of the dynamic visual experience of YouTube-based learning coupled with the depth of knowledge found in carefully curated e-books.
+
+        </p>
+        <h4 class="display-5">Who We Are:</h4>
+        <p class="text-justify">LearnOnTube is not just a platform; it's a community of passionate educators, creators, and learners. We are dedicated to transforming the way you acquire knowledge by seamlessly merging the power of video content with the comprehensive insights offered through e-books.</p>
+        <p class="text-justify"> Embark on a learning adventure with LearnOnTube, where knowledge knows no bounds. We invite you to explore the vast expanse of subjects, enhance your skills, and unlock new possibilities. Whether you're a student, a professional, or a curious mind, LearnOnTube is your partner in the pursuit of knowledge.
+
+            At LearnOnTube, the learning never stops. Come, discover, and grow with us! </p>
+    </div>
+    <div class="col-md-6">
+        <img src=" {% static 'learn.png' %} " class="img-fluid" alt="" srcset="">
+    </div>
+</div>
+</div>
+<footer class="container-fluid bg-warning">
+<div class="row">
+    <div class="col-md-4">
+        <img src="{% static 'logo.png' %}" class="img-fluid kj ml-5 " width="280px" alt="" srcset="">
+    <h6 class="display-6 text-light"> the learning never stops. Come, discover, and grow with us!</h5>
+    </div>
+    <div class="col-md-4">
+        <div class="display-4 text-light text-center"> Our Links </div>
+        <a href="http://" class="nav-link text-center text-light">Home</a>
+        <a href="http://" class="nav-link text-center text-light">Courses</a>
+        <a href="http://" class="nav-link text-center text-light">Contact-us</a>
+        <a href="http://" class="nav-link text-center text-light">About-us</a>
+    </div>
+    <div class="col-md-4">
+        <h4 class="display-4 text-light">Subscribe Us</h4>
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="text-light">Email address</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </form>
+    </div>
+</div>
+
+</footer>
+</body>
+</html>

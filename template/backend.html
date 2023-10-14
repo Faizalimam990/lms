@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/64085cd283.js" crossorigin="anonymous"></script>    
+    <title>LearnonTube</title>
+</head>
+<style>
+    .nav-item {
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+    }
+    
+    .kml {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .kj{
+        mix-blend-mode: multiply;
+    }
+    
+    .nav-link:hover {
+        background-color: rgb(28, 220, 28);
+        border-radius: 15px;
+        font-weight: bold;
+    }
+
+    /* Added styles for responsive video container */
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive video */
+        overflow: hidden;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+</style>
+<body>
+       
+<nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+    <a class="navbar-brand" href="#">LearnOnTube</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link ml-2" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ml-2" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ml-2" href="#">Donate Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ml-2" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ml-2 mr-3 " href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container-fluid mt-2">
+    <!-- Responsive video container -->
+    <div class="video-container">
+        <iframe width="930" height="523" src="https://www.youtube.com/embed/cGAdC4A5fF4" title="Master the BACKEND in One Video: The Ultimate Resource for Developers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="container-fluid mt-4">
+    <h3 class="text-center text-light bg-warning"> Videos Based Projects </h3>
+</div>
+
+<div class="container-fluid mt-4">
+<div class="row">
+    <div class="col-md-4">
+        <img src="{% static 'side.svg' %}"  class="img-fluid" alt="" srcset="">
+
+    </div>
+    <div class="col-md-4">
+        <p class="text display-5">Here are Top 5 Projects to Upskill based on the video</p>
+    <ul class="list-group">
+        <li class="list-group-item"><a href="https://github.com/ayushman1024/TASK-Management-System">Task Management System</a></li>
+        <li class="list-group-item"><a href="https://github.com/shashirajraja/onlinebookstore">Online Book store</a></li>
+        <!-- Add more projects here -->
+        <li class="list-group-item"><a href="https://github.com/mehulk05/Angular-Blogging-App">Blogging Site</a></li>
+        <li class="list-group-item"><a href="https://github.com/yassinjouao/instagram-clone-backend">Social Media Project</a></li>
+        <li class="list-group-item"><a href="https://github.com/james-fray/local-cdn">CDN SYSTEM</a></li>
+    </ul>
+
+
+    </div>
+    <div class="col-md-4">
+        <h4 class="display-5 text-bold">Download E-book </h4>
+        <img src="{% static 'bck.png' %}" width="150px"  class="p-1 img-fluid" alt="" srcset=""> <br>
+        <a href="{% static 'node.pdf' %}" download class="btn ml-5 btn-warning">Download</a>
+    </div>
+</div>
+
+    </div>
+
+
+    <footer class="container-fluid bg-warning">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{% static 'logo.png' %}" class="img-fluid kj ml-5 " width="280px" alt="" srcset="">
+            <h6 class="display-6 text-light"> the learning never stops. Come, discover, and grow with us!</h5>
+            </div>
+            <div class="col-md-4">
+                <div class="display-4 text-light text-center"> Our Links </div>
+                <a href="http://" class="nav-link text-center text-light">Home</a>
+                <a href="http://" class="nav-link text-center text-light">Courses</a>
+                <a href="http://" class="nav-link text-center text-light">Contact-us</a>
+                <a href="http://" class="nav-link text-center text-light">About-us</a>
+            </div>
+            <div class="col-md-4">
+                <h4 class="display-4 text-light">Subscribe Us</h4>
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1" class="text-light">Email address</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </form>
+            </div>
+        </div>
+        
+        </footer>
+
+
+</body>
+</html>
